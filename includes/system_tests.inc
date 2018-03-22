@@ -224,7 +224,7 @@ function tst_tmpdir()
 	
 	$test['descr'] = _('Temporary directory');
 	$test['type'] = 3;
-	$test['test'] = VARLIB_PATH;
+	$test['test'] = $path_to_root.'/tmp';
 	$test['result'] = is_dir($test['test']) && is_writable($test['test']);
 	$test['comments'][] = sprintf(_("'%s' is not writeable"), $test['test']);
 	return $test;
@@ -378,8 +378,8 @@ function tst_extconfig($install)
 	$themedir = opendir($fname);
 	while (false !== ($fname = readdir($themedir)))
 	{
-		if ($fname!='.' && $fname!='..' && is_dir($path_to_root.'/themes/'.$fname)
-			&& !in_array($fname, array('canvas', 'default', 'dropdown')))
+		if ($fname!='.' && $fname!='..' && $fname!='CVS' && is_dir($path_to_root.'/themes/'.$fname)
+			&& !in_array($fname, array('aqua', 'cool', 'default')))
 		{
 			$test['test'][] = $fname;
 			$test['result'] = is_writable($path_to_root.'/themes/'.$fname);

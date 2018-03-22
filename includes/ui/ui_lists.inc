@@ -1311,27 +1311,25 @@ function sales_persons_list_row($label, $name, $selected_id=null, $spec_opt=fals
 
 //------------------------------------------------------------------------------------
 
-function sales_areas_list($name, $selected_id=null, $special_option=false)
+function sales_areas_list($name, $selected_id=null)
 {
 	$sql = "SELECT area_code, description, inactive FROM ".TB_PREF."areas";
-	return combo_input($name, $selected_id, $sql, 'area_code', 'description', 
-		array('spec_option' => $special_option===true ? ' ' : $special_option,
-		'order' => 'description', 'spec_id' => 0));
+	return combo_input($name, $selected_id, $sql, 'area_code', 'description', array());
 }
 
-function sales_areas_list_cells($label, $name, $selected_id=null, $special_option=false)
+function sales_areas_list_cells($label, $name, $selected_id=null)
 {
 	if ($label != null)
 		echo "<td>$label</td>\n";
 	echo "<td>";
-	echo sales_areas_list($name, $selected_id, $special_option);
+	echo sales_areas_list($name, $selected_id);
 	echo "</td>\n";
 }
 
-function sales_areas_list_row($label, $name, $selected_id=null, $special_option=false)
+function sales_areas_list_row($label, $name, $selected_id=null)
 {
 	echo "<tr><td class='label'>$label</td>";
-	sales_areas_list_cells(null, $name, $selected_id, $special_option);
+	sales_areas_list_cells(null, $name, $selected_id);
 	echo "</tr>\n";
 }
 
@@ -2639,12 +2637,12 @@ function subledger_list($name, $account, $selected_id=null)
 		FROM "
 		.TB_PREF."debtors_master d,"
 		.TB_PREF."cust_branch c
-		WHERE d.debtor_no=c.debtor_no AND NOT d.inactive AND c.receivables_account=".db_escape($account);
+		WHERE d.debtor_no=c.debtor_no AND c.receivables_account=".db_escape($account);
 	else
 		$sql = "SELECT supplier_id as id, supp_ref as name 
 		FROM "
 		.TB_PREF."suppliers s
-		WHERE NOT s.inactive AND s.payable_account=".db_escape($account);
+		WHERE s.payable_account=".db_escape($account);
 
 	$mode = get_company_pref('no_customer_list');
 
