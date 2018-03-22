@@ -1,0 +1,6 @@
+newline=²
+name=Site.Search
+rev=2
+targets=
+text=(:notitle:)²²(:searchbox:)²²(:searchresults:)²!![-Search examples:-]²[- -]²(:if ! auth edit:)²||border='0' cellspacing='0' width='100%' cellpadding='0' ²||'''Enter'''    ||'''To find pages containing''' ||²||apple pie      ||both 'apple' and 'pie' ||²||"apple pie"    ||the phrase 'apple pie' ||²||apple -pie     ||'apple', omitting those containing 'pie' ||²||tasty -"apple pie" ||'tasty', omitting those containing 'apple pie' ||²||apple "-pie"   ||the words 'apple' and '-pie' ||²||apple - pie    ||'apple', '-', and 'pie' || ²(:if auth edit:)²||border='0' cellspacing='0' width='100%' cellpadding='0' ²||'''Enter'''    ||'''To find pages containing''' ||²||apple pie      ||both 'apple' and 'pie' ||²||"apple pie"    ||the phrase 'apple pie' ||²||pmwiki/apple   ||'apple' in the [=PmWiki=] group ||²||"pmwiki/apple" ||the phrase 'pmwiki/apple' in all groups ||²||apple -pie     ||'apple', omitting those containing 'pie' ||²||tasty -"apple pie" ||'tasty', omitting those containing 'apple pie' ||²||apple "-pie"   ||the words 'apple' and '-pie' ||²||apple - pie    ||'apple', '-', and 'pie' || ²
+time=1126220675

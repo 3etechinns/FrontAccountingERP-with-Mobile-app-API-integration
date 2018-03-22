@@ -1,0 +1,107 @@
+CIS-Dept. Light Skin for PmWiki 2
+=================================
+INSTALL.txt
+
+This skin installs in two easy steps:
+0) Make sure you are using PmWiki 2.0.beta44 or newer.
+1) Put the files in the correct location.
+2) Configure PmWiki to use the skin with some lines in the
+   local configuration file.
+
+
+Step 1 - Copy files.
+--------------------
+Copy the light/ directory to your wiki's pub/skins/ directory.
+The directory contains the following files:
+
+pub/skins/light/
+|-- README.txt                Brief documentation
+|-- INSTALL.txt               This file
+|-- light.tmpl                Template
+|-- light.php                 PHP script
+|-- light.css                 CSS stylesheet
+|-- light2.css                CSS stylesheet 2
+|-- lighticon.gif             Icon image
+|-- lightlogo.gif             Logo graphic image
+|-- lightlogo-old.gif         Old logo graphic image
+|-- lightlogo2.gif            Alternate logo graphic image
+|-- lightviews.php            "View" switching script
+|-- print/
+|   `-- print.tmpl            Print View template
+`-- wikilib.d/
+    |-- Main.AboutThisSite         Default About This Site page
+    |-- Main.AllRecentChanges      Non-$SiteGroup AllRecentChanges page
+    |-- Site.LightEditForm         Custom Edit Form
+    |-- Site.LightXLPage           Preferences Page
+    |-- Site.Search                Custom Search page
+    `-- Site.UploadQuickReference  Custuom UploadQuickReference page
+
+
+Step 2 - Edit local configuration file.
+---------------------------------------
+The following lines go in your local/config.php local configuration
+file.
+
+## Use the CIS-Dept. Light Skin and its printable-view skin.
+SDV($Skin, 'light');
+SDV($ActionSkin['print'], 'light/print');
+## Enable the Light Skin's Content Management-oriented features.
+# $EnableCMSMode = 1;
+
+If you don't have a local/config.php yet you'll need to create one.
+Make sure that "<?php" is the very first line, with no leading spaces.
+You don't need a closing "?>". Here's an example local/config.php:
+
+<?php
+## Title of this wiki
+$WikiTitle = 'My Site';
+
+## Use the CIS-Dept. Light Skin and its printable view skin.
+SDV($Skin, 'light');
+SDV($ActionSkin['print'], 'light/print');
+## Enable the Light Skin's Content Management-oriented features.
+$EnableCMSMode = 1;
+
+## Set an administrative password.
+$DefaultPasswords['admin'] = '$1$xNI5oUI9$vQtoUEMmyYUfYGWX3msvJ/';
+
+## Require authors to provide an Author Name 
+$EnablePostAuthorRequired = 1;
+
+## Keep read-protected pages from appearing in search results.
+$EnablePageListProtect = 1;
+
+## Require approval of links to external sites.
+include_once('scripts/urlapprove.php');
+$UnapprovedLinkCountMax = 10;
+
+## Enable RSS and Atom feeds web feeds.
+if ($action == 'rss' || $action == 'atom') {
+  include_once("scripts/feeds.php"); }
+
+## Enable ?action=refcount for finding missing and orphaned pages.
+if ($action == 'refcount') {
+  $HandleAuth['refcount'] = 'edit';
+  include_once('scripts/refcount.php'); }
+
+
+Translation
+-----------
+
+Some translation hints:
+* You can use Site.LightXLPage for translation.
+* Check the light.php file for other items that need translation.
+
+
+Customization
+-------------
+
+See light.php for lots of custom settings and their default values.
+
+Custom Style Settings -
+You can customize the appearance of this skin by editing the light.css file.
+Remember to view your pages in different browsers (at least a Mozilla browser
+and IE, if possible) to assure cross-browser compatibility.
+
+
+Enjoy!

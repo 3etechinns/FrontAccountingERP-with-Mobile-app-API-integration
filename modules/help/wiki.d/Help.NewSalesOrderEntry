@@ -1,0 +1,21 @@
+version=pmwiki-2.2.0-beta65 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (X11; U; Linux i686; rv:1.7.8) Gecko/20050513 Debian/1.7.8-1
+author=Janusz
+charset=ISO-8859-1
+csum=
+ctime=1204205730
+host=127.0.0.1
+name=Help.NewSalesOrderEntry
+rev=3
+targets=
+text=Here you can entry customer sales order.%0a%0aFirst select customer and customer branch, then entry some order lines.%0a%0aWhen all your line items are entered you can set delivery details for this order. After this you can netry all the sales order with '''Place Order''' button.%0a%0aTo abandon sales order entry - press '''Cancel Order''' button. When you are editing previously entered sales order this button deletes sales order from database.%0a%0a''''+''Warning! Delivery details should be added after all line items are done. In current version of sales application any change to line items will reset delivery details. Yes, we know - this is a bug.''+''''
+time=1204206020
+author:1204206020=Janusz
+diff:1204206020:1204205936:=5,7c5,7%0a%3c When all your line items are entered you can set delivery details for this order. After this you can netry all the sales order with '''Place Order''' button.%0a%3c %0a%3c To abandon sales order entry - press '''Cancel Order''' button. When you are editing previously entered sales order this button deletes sales order from database.%0a---%0a> When all your line items are entered you can set delivery details for this order. After this you can netry all the sales order with [[Place Order]] button.%0a> %0a> To abandon sales order entry - press [[Cancel Order]] button. When you are editing previously entered sales order this button deletes sales order from database.%0a
+host:1204206020=127.0.0.1
+author:1204205936=Janusz
+diff:1204205936:1204205730:minor=5,9c5,7%0a%3c When all your line items are entered you can set delivery details for this order. After this you can netry all the sales order with [[Place Order]] button.%0a%3c %0a%3c To abandon sales order entry - press [[Cancel Order]] button. When you are editing previously entered sales order this button deletes sales order from database.%0a%3c %0a%3c ''''+''Warning! Delivery details should be added after all line items are done. In current version of sales application any change to line items will reset delivery details. Yes, we know - this is a bug.''+''''%0a\ No newline at end of file%0a---%0a> When all your line items are entered you can set delivery details for this order.%0a> %0a> ''''+''Warning! Delivery details should be added after all line items are done. In current version of sales application any change to line items will reset delivery details. Yes, we know - this is a bug''+''''%0a\ No newline at end of file%0a
+host:1204205936=127.0.0.1
+author:1204205730=Janusz
+diff:1204205730:1204205730:=1,7d0%0a%3c Here you can entry customer sales order.%0a%3c %0a%3c First select customer and customer branch, then entry some order lines.%0a%3c %0a%3c When all your line items are entered you can set delivery details for this order.%0a%3c %0a%3c ''''+''Warning! Delivery details should be added after all line items are done. In current version of sales application any change to line items will reset delivery details. Yes, we know - this is a bug''+''''%0a\ No newline at end of file%0a
+host:1204205730=127.0.0.1

@@ -1,0 +1,4 @@
+newline=²
+name=Site.LightRightSideBarBottom
+text=(:if !auth edit:)%right gray%[-[[{$Name}?action=login|Login]]-]&nbsp;%%(:if auth edit:)%right%[-[[{$Name}?action=logout|Logout]]&nbsp;-]%%(:if authid:)[- ({$AuthId}) &nbsp;-](:ifend:)
+time=1137799419

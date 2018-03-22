@@ -1,0 +1,10 @@
+/*
+These CSS selectors will overrride selectors PmWiki injects into
+the HTML header.
+*/
+.indent { margin-left:30px; }
+.outdent { margin-left:30px; text-indent:-30px; }
+.diffbox { width:745px; margin-top:10px; }
+.diffadd code, .diffdel code { padding-right:1px; white-space:normal; }
+.diffrestore, .difftype, .difftime .diffauthor { font-size:8pt; }
+.diffrestore { margin-top:2px; }

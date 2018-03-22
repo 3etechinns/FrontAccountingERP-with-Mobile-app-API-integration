@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+ <head>
+  <title>$WikiTitle : {$Titlespaced} $ActionTitle</title>
+  <meta http-equiv='Content-Type' content='text/html; charset=$[ISO-8859-1]' />
+  <meta http-equiv='Content-Language' content='$[en]' />
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <meta http-equiv="imagetoolbar" content="no" />
+  <meta name='MSSmartTagsPreventParsing' content='true' />
+  <link rel='icon' href='$SkinDirUrl/lighticon.gif' type='image/gif' />
+  <link rel='SHORTCUT ICON' href='$SkinDirUrl/lighticon.gif' />
+  <link rel='stylesheet' href='$SkinDirUrl/light.css' type='text/css' />
+  <!--HeaderText-->
+ </head>
+
+ <body>
+  <!--PageHeaderFmt-->
+  <table summary='Site Header' id='sitehead'
+   cellpadding='0' cellspacing='0' border='0' align='center'>
+   <tr>
+    <td id='headleft' title='$[$WikiTitle Home]'>
+     <div id='headlogo'>$SkinHomeLink</div>
+    </td>
+    <td id='headright'>
+     <div id='headcmdsupper'>
+      $SkinBackLinksFmt<span class='headsearch'><a href='{$ScriptUrl}/$[{$SiteGroup}/$SkinSearch]'
+       title='$[Search the site]' rel='nofollow'>$[Search]</a>: </span><form
+       class='headsearch search' action='{$ScriptUrl}'><input
+       class='searchbox' type='text' name='q' value='' size='40' /><input
+       class='searchbutton' type='submit' value='$[Go]' /> $SkinFormInput
+      </form></div>
+     <div id='headcmdslower'>
+      $SkinWikiLinksFmt$SkinUploadLinkFmt$SkinPrintLinkFmt$SkinAboutLinkFmt</div>
+    </td>
+   </tr>
+  </table>
+  <!--/PageHeaderFmt-->
+  <!--PageAdminTopFmt-->
+
+  <table summary='Site Admin' id='siteadmintop'
+   cellpadding='0' cellspacing='0' border='0' align='center'>
+   <tr>
+    <td class='adminapprovesite'><a href='{$PageUrl}?action=approvesites'
+     title='$[Approve the linked sites on this page]' rel='nofollow'>$[Approve Sites]</a></td>
+    <td class='adminapproveurl'><a href='{$PageUrl}?action=approveurls' // TODO
+     title='$[Approve the URLs on this page]' rel='nofollow'>$[Approve URLs]</a></td>
+   </tr>
+  </table>
+  <!--/PageAdminTopFmt-->
+ 
+  <table summary='Site Main' id='sitemain'
+   cellpadding='0' cellspacing='0' border='0' align='center'>
+   <tr>
+    <!--PageLeftFmt-->
+    <td id='mainsidebar' $SkinHideSide>
+     <table summary='SideBar' id='sidebar' width='100%'
+      cellpadding='0' cellspacing='0' border='0'>
+      <tr><td>
+       <!--wiki:{$Group}.SideBar {$SiteGroup}.SideBar Main.SideBar--><div
+       id='sidebarbottom'><!--wiki:{$SiteGroup}.LightLeftSideBarBottom--></div></td></tr>
+     </table>
+    </td>
+    <!--/PageLeftFmt-->
+    <td id='maincontent'>
+     <table summary='Content' id='sitecontent' width='100%'
+      cellpadding='0' cellspacing='0' border='0'>
+      <tr><td> 
+       <!--PageTitleFmt-->
+       <div id='location'
+        title='{$Titlespaced} $[was last modified on] {$LastModified}' $SkinHideLoc><span
+        class='grouplink'>$SkinGroupFmt</span><span
+        class='separator'>&raquo;</span><span class='titlelink'>$SkinTitleFmt</span></div>
+       $SkinTitleHeadingFmt
+       <!--/PageTitleFmt-->
+       <!--PageText-->
+      </td></tr>
+     </table>
+    </td>
+    <!--PageRightFmt-->
+    <td id='mainsidebar' $SkinHideSide>
+     <table summary='SideBar' id='sidebar' width='100%'
+      cellpadding='0' cellspacing='0' border='0'>
+      <tr><td>
+       <!--wiki:{$Group}.SideBar {$SiteGroup}.SideBar Main.SideBar--><div
+       id='sidebarbottom'><!--wiki:{$SiteGroup}.LightRightSideBarBottom--></div></td></tr>
+     </table>
+    </td>
+    <!--/PageRightFmt-->
+   </tr>
+  </table>
+  <!--PageAdminBtmFmt-->
+ 
+  <table summary='Site Admin' id='siteadminbtm'
+   cellpadding='0' cellspacing='0' border='0' align='center'>
+   <tr>
+    <td class='adminrefcount'><a href='{$PageUrl}?action=refcount'
+     title='$[Reference count]' rel='nofollow'>$[Reference Count]</a></td>
+    <td class='adminusers'><a href='{$ScriptUrl}/$[{$SiteGroup}/AuthUser]'
+     title='$[Go to the AuthUser page]' rel='nofollow'>$[Manage Users]</a></td>
+    <td class='adminexpire'><a href='{$PageUrl}?action=expirediff'
+     title='$[Clear History of this page]' rel='nofollow'>$[Clear History]</a></td>
+    <td class='admindelete'><a href='{$PageUrl}?action=delete'
+     title='$[Delete this page]' rel='nofollow'>$[Delete Page]</a></td>
+    <td class='adminattr'><a href='{$PageUrl}?action=attr'
+     title='$[Change attributes for this page]' rel='nofollow'>$[Change Attributes]</a></td>
+    <td class='adminrename'><a href='{$PageUrl}?action=rename'
+     title='$[Rename this page]' rel='nofollow'>$[Rename Page]</a></td>
+   </tr>
+  </table>
+  <!--/PageAdminBtmFmt-->
+  <table summary='Site Footer' id='sitefoot'
+   cellpadding='0' cellspacing='0' border='0' align='center'>
+   <!--PageFooterFmt-->
+   <tr>
+    <td id='footleft'>
+     <span id='footedit'><a href='{$PageUrl}?action=edit'
+       title='$[(E)dit this page]' rel='nofollow'
+       accesskey='$[ak_edit]'>$[Edit Page]</a>
+     </span><span id='foothist'>|
+      <a href='{$PageUrl}?action=diff'
+       title='$[(H)istory of this page]' rel='nofollow'
+       accesskey='$[ak_history]'>$[Page History]</a></span> 
+    </td>
+    <td id='footmiddle'>
+     <span id='footlastmod'>$[Page last modified on {$LastModified}]</span> 
+    </td>
+    <td id='footright'>
+     <span id='footchanges'><a href='$ScriptUrl/$[{$Group}/RecentChanges]'
+       title='$[Recent (C)hanges in this section]'  rel='nofollow'
+       accesskey='$[ak_recentchanges]'>$[Recent Changes]</a>
+      <a href='{$ScriptUrl}/$[Main/AllRecentChanges]'
+       title='$[(A)ll Recent changes for the entire site]' rel='nofollow'
+       accesskey='$[ak_allrecent]'>$[(All)]</a>
+     </span><span id='footeditsb'>|
+      <a href='{$ScriptUrl}/$[{$SiteGroup}/SideBar]?action=edit'
+       title='$[Edit the Side(B)ar]' rel='nofollow'
+       accesskey='$[ak_editsidebar]'>$[Edit SideBar]</a></span>$SkinLoginFmt
+    </td>
+   </tr>
+   <!--/PageFooterFmt-->
+   <tr>
+    <td id='sitesole' colspan='3'>
+     $SkinCopyright $PoweredByFmt
+    </td>
+   </tr>
+  </table>
+  <!-- vim: expandtab sw=1 ts=1 sts=1 :
+  -->
+ </body>
+</html>

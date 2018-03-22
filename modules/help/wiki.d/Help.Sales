@@ -1,0 +1,15 @@
+version=pmwiki-2.2.0-beta65 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (X11; U; Linux i686; rv:1.7.8) Gecko/20050513 Debian/1.7.8-1
+author=Janusz
+charset=ISO-8859-1
+csum=
+ctime=1204205285
+host=127.0.0.1
+name=Help.Sales
+rev=1
+targets=
+text=This is sales module main menu. %0a%0aThere is no help available for it. If you want to describe it in short, or not so short word  you are welcome.
+time=1204205285
+author:1204205285=Janusz
+diff:1204205285:1204205285:=1,3d0%0a%3c This is sales module main menu. %0a%3c %0a%3c There is no help available for it. If you want to describe it in short, or not so short word  you are welcome.%0a\ No newline at end of file%0a
+host:1204205285=127.0.0.1

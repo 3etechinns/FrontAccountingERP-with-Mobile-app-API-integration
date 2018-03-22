@@ -1,0 +1,10 @@
+version=pmwiki-2.2.0-beta31 ordered=1 urlencoded=1
+agent=Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; Maxthon; .NET CLR 2.0.50727)
+author=
+csum=
+host=83.14.255.130
+name=PmWikiPl.PmWikiPl
+rev=21
+targets=PmWiki.WikiWikiWeb
+text=PmWiki to system typu [[PmWiki/WikiWikiWeb|WikiWiki]] przeznaczony do zespołowego tworzenia i ulepszania stron w internecie.%0a%0aWitryny utworzone przy użyciu PmWiki zachowują się jak normalne strony w sieci, lecz mają udostępnioną funkcję "[[http://www.pmwiki.org/wiki/Main/WikiSandbox?action=edit|edytuj]]" która umożliwia łatwe zmienianie stron a także ich dodawanie przy użyciu podstawowych zasad edycji. Aby to robić nie ma konieczności znajomości HTML ani CSS. Możliwość poprawiania może być dostępna dla każdego internauty albo ograniczona do wybranej grupy autorów.%0a%0aPmWiki napisana została w języku %25newwin%25[[http://php.net/|PHP]] i jest jest dostępna na zasadach licencji %25newwin%25[[http://www.gnu.org/copyleft/gpl.html| General Public License]]. Została zaprojektowana tak, aby była łatwa w instalacji, dostosowaniu do konkretnych wymagań oraz utrzymywaniu dla wielu rodzajów aplikacji. Witryna którą właśnie oglądasz korzysta z wersji {$Version}.%0a%0aPmWiki jest zarejestrowanym znakiem towarowym, którego właścicielem jest [[http://www.pmichaud.com/|Patrick R. Michaud]].%0a%0aPmWiki ma stronę domową pod adresem [[(http://)pmwiki.org(/)]]%0a%0a(:include OtherLanguages:)
+time=1171723515

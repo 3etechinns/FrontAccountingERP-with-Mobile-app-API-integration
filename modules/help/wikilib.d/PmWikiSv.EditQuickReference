@@ -1,0 +1,10 @@
+version=pmwiki-2.1.beta38 ordered=1 urlencoded=1
+agent=Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)
+author=M
+csum=
+host=83.226.154.205
+name=PmWikiSv.EditQuickReference
+rev=6
+targets=PmWikiSv.EnkelRedigering,PmWiki.Textformatering,PmWikiSv.TabellerLätt,PmWikiSv.TabellerAvancerad,Main.Testsida
+text=(:table class='quickref' width='100%25' cellspacing='0' cellpadding='0' style='font-size:12px; font-family:Arial; padding:2px; border:1px solid #cccccc;' bgcolor=#f9f9f9 :)%0a(:cellnr:)%0a%25target=_blank%25 '''Text:''' [[PmWikiSv/Enkel redigering]] - [[PmWiki/Textformatering]]%0a(:cell align=right:)%0a%25target=_blank%25 '''Tabeller:''' [[PmWikiSv/(Tabeller)Lätt]] - [[PmWikiSv/(Tabeller)Avancerad]]%0a(:cellnr:)%0a-%3c'''Formatering:''' ''[=''kursiv''=]'', '''[='''fet'''=]''', '''''[='''''fet kursivt'''''=]''''', @@[=@@skrivmaskin@@=]@@%0a-%3c'''Annan formatering:''' [+[=[+större+]=]+], [-[=[-mindre-]=]-], '^[='^upphöjt^'=]^', '_[=_nersänkt_=]_', {+[={+underskryket+}=]+}, {-[={-överstryket-}=]-}%0a-%3c'''Externa länkar:''' [=[[annan sida]], [[http://www.example.com]], [[annan sida | länktext]], [[#anchor]]=]%0a-%3c'''Interna länkar:''' [=[[Main/Testsida]] ger =][[Main/Testsida]][=, [[Main.Testsida]] ger =][[Main.Testsida]][=, [[(Main.)Test(sida)]]=] ger [[(Main.)Test(sida)]]%0a-%3c'''Listor:''' @@*@@ för punktlista, @@#@@ för numrerad lista, @@:term:definition@@ för definitionslista%0a-%3c'''Paragrafer:''' [=->=] för indrag av första raden, [=-%3c=] för utdrag%0a-%3c'''Separatorer:''' '''!!''', '''!!!''' för rubriker, '''[=----=]''' för horisontell linje%0a(:cell align=right:)%0a'''Radbrytning:''' [=\\=] eller [=[[%3c%3c]]=]%0a\\\\\\%0a'''Undvik formatering:''' [=[=...=]=]\\%0a'''Exakt formatering:''' [=[@...@]=]%0a(:tableend:)
+time=1142069137

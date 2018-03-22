@@ -1,0 +1,6 @@
+newline=²
+name=Main.AboutThisSite
+rev=1
+targets=Main.AboutThisSite
+text=This is a default page.(:if ! auth edit:)²²²[[{$Name}?action=login | $[Login] ]](:ifend:)
+time=1137799419

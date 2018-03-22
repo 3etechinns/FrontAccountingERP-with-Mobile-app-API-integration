@@ -1,0 +1,6 @@
+newline=²
+name=Site.UploadQuickReference
+rev=8
+targets=PmWiki.Uploads
+text=>>class='quickref' color='ffffff' bgcolor=#f9f9f9 font-family=Arial font-size=12px padding=2px border='1px solid #cccccc'<<²Refer to an attached file in this [=WikiGroup=] ({$Group}) with²²->[@Attach:filename.ext@]²²Refer to an attached file in another [=WikiGroup=] with²²->[@Attach:GroupName/filename.ext@]²or²->[@Attach:GroupName.PageName/filename.ext@]²²See also the %newwin%[[PmWiki/Uploads | Uploads documentation]].²>><<²²----²²!!Existing uploads²²(:attachlist:)
+time=1126054384

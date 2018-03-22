@@ -1,0 +1,7 @@
+newline=²
+author=HaganFox
+name=Site.LightEditForm
+rev=2
+targets=Site.LightEditForm
+text=(:noleft:)(:noright:)!$[Editing] `{$FullName} %block class=wikiaction%²(:messages:)²(:div id='wikiedit':)²'^(:input e_form:)[[#top]]%ebutton%(:input e_previewbutton:)%%^' [-%gotopreview%[[#preview | $[v] ]]-]%% '^%ebutton% (:input e_cancelbutton:)%%^' (:e_guibuttons:)\\²(:input e_textarea:)²$[Summary]: %eformtext%(:input e_changesummary:)%%\\²$[Author]: %eformtext%(:input e_author:)%% (:input e_minorcheckbox:) $[This is a minor edit]\\²%ebutton%(:input e_savebutton:)%% %ebutton%(:input e_saveeditbutton:)%% %ebutton%(:input e_savedraftbutton:)%% %ebutton%(:input e_previewbutton:)%% %gotopreview%[-[[#preview | $[v] ]]-]%% %ebutton%(:input e_cancelbutton:)%% [[#preview]](:input end:)²(:divend:)²(:include $[{$SiteGroup}/EditQuickReference]:)²(:if e_preview:)²!!$[Preview {$FullName}]²'''$[Beginning of preview -- page is unsaved]'''²²(:e_preview:)²²'''$[End of preview -- remember to save]'''\\²[[#top | $[Top] ]]²(:if:)
+time=1124527780
