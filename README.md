@@ -6,17 +6,4 @@ It supports double entry accounting providing both low level journal entry and u
 interface for everyday business activity with automatic GL postings generation. This is multicurrency,
 multilanguage system with active worldwide users community:
 
-Project web site http://frontaccounting.com
-
-SourceForge project page: http://sourceforge.net/projects/frontaccounting/
-
-Central users forum: http://frontaccounting.com/punbb/index.php
-
-Main code repository: https://sourceforge.net/p/frontaccounting/git/ci/master/tree/
-
-GitHub mirror: http://github.com/FrontAccountingERP/FA
-
-Mantis bugtracker: http://mantis.frontaccounting.com
-
-FrontAccounting is available under GPL v.3 license.
-
+Using the Slim framework we have been able to create some API for a Mobile App we are working on.
