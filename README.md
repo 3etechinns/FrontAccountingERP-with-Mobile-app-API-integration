@@ -6,8 +6,10 @@ It supports double entry accounting providing both low level journal entry and u
 interface for everyday business activity with automatic GL postings generation. This is multicurrency,
 multilanguage system with active worldwide users community:
 
-Using the Slim framework we have been able to create some REST API for a Mobile App we are working on.
+
+This is not the official Repository. checkout the offial repo at-https://github.com/FrontAccountingERP/FA! 
+
+This Repo utilizes the Slim framework to create some REST API that accepts data from a Mobile App.  
 
 Slim Framework Implentation is found under "/modules/fa/" directory
-
 The implementated APIs "/mobileAPI/" directory.
