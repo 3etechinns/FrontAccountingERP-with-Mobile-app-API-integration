@@ -6,4 +6,8 @@ It supports double entry accounting providing both low level journal entry and u
 interface for everyday business activity with automatic GL postings generation. This is multicurrency,
 multilanguage system with active worldwide users community:
 
-Using the Slim framework we have been able to create some API for a Mobile App we are working on.
+Using the Slim framework we have been able to create some REST API for a Mobile App we are working on.
+
+Slim Framework Implentation is found under "/modules/fa/" directory
+
+The implementated APIs "/mobileAPI/" directory.
